@@ -7,8 +7,13 @@
  *
  */
 
+#if __has_include("FBSnapshotTestCase.h")
+#import "UIImage+Snapshot.h"
+#import "UIApplication+StrictKeyWindow.h"
+#else
 #import <FBSnapshotTestCase/UIImage+Snapshot.h>
 #import <FBSnapshotTestCase/UIApplication+StrictKeyWindow.h>
+#endif
 
 @implementation UIImage (Snapshot)
 

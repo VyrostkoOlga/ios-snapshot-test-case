@@ -28,7 +28,11 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#if __has_include("FBSnapshotTestCase.h")
+#import "UIImage+Diff.h"
+#else
 #import <FBSnapshotTestCase/UIImage+Diff.h>
+#endif
 
 @implementation UIImage (Diff)
 

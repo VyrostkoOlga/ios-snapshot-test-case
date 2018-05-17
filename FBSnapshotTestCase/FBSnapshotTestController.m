@@ -7,11 +7,19 @@
  *
  */
 
+#if __has_include("FBSnapshotTestCase.h")
+#import "FBSnapshotTestController.h"
+#import "FBSnapshotTestCasePlatform.h"
+#import "UIImage+Compare.h"
+#import "UIImage+Diff.h"
+#import "UIImage+Snapshot.h"
+#else
 #import <FBSnapshotTestCase/FBSnapshotTestController.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
 #import <FBSnapshotTestCase/UIImage+Compare.h>
 #import <FBSnapshotTestCase/UIImage+Diff.h>
 #import <FBSnapshotTestCase/UIImage+Snapshot.h>
+#endif
 
 #import <UIKit/UIKit.h>
 

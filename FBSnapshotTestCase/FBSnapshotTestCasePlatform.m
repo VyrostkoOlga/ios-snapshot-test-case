@@ -7,8 +7,14 @@
  *
  */
 
+#if __has_include("FBSnapshotTestCase.h")
+#import "FBSnapshotTestCasePlatform.h"
+#import "UIApplication+StrictKeyWindow.h"
+#else
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
 #import <FBSnapshotTestCase/UIApplication+StrictKeyWindow.h>
+#endif
+
 #import <UIKit/UIKit.h>
 
 BOOL FBSnapshotTestCaseIs64Bit(void)

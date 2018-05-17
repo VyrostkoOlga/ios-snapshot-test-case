@@ -7,7 +7,11 @@
  *
  */
 
+#if __has_include("FBSnapshotTestCase.h")
+#import "UIApplication+StrictKeyWindow.h"
+#else
 #import <FBSnapshotTestCase/UIApplication+StrictKeyWindow.h>
+#endif
 
 @implementation UIApplication (StrictKeyWindow)
 
