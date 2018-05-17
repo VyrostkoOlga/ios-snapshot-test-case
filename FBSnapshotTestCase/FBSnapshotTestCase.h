@@ -7,7 +7,7 @@
  *
  */
 
-#if __has_include("FBSnapshotTestCase")
+#if __has_include("FBSnapshotTestCase.h")
 #import "FBSnapshotTestCasePlatform.h"
 #import "FBSnapshotTestController.h"
 #else
