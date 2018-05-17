@@ -10,7 +10,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#if __has_include("FBSnapshotTestCase.h")
+#import "FBSnapshotTestCasePlatform.h"
+#else
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
+#endif
 
 typedef NS_ENUM(NSInteger, FBSnapshotTestControllerErrorCode) {
   FBSnapshotTestControllerErrorCodeUnknown,
